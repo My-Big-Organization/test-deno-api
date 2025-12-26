@@ -1,0 +1,16 @@
+{
+  "name": "@myorg/deno-api",
+  "version": "1.0.0",
+  "imports": {
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "postgres": "https://deno.land/x/postgres@v0.17.0/mod.ts",
+    "redis": "https://deno.land/x/redis@v0.32.0/mod.ts",
+    "zod": "https://deno.land/x/zod@v3.22.4/mod.ts",
+    "dotenv": "https://deno.land/std@0.208.0/dotenv/mod.ts",
+    "testing": "https://deno.land/std@0.208.0/testing/asserts.ts"
+  },
+  "tasks": {
+    "dev": "deno run --watch --allow-all src/main.ts",
+    "test": "deno test --allow-all"
+  }
+}
